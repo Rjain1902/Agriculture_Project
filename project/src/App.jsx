@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-
+import main_background from './utils/images/main_background.png'
+import { Nav } from './components/Nav'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-     <h1>Aggricultrue Project</h1>
-    </>
+    <div className='w-full h-screen' style={{backgroundImage: `url(${main_background})`, backgroundSize: 'cover',backgroundPosition: 'center'}}>
+     <Nav/>
+    </div>
   )
 }
 

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+NL:wght@300&display=swap');
+p{
+    font-family:"Dancing Script", cursive;
+    font-size: 22px;
+}
+
+a:hover p{
+    font-weight: bold;
+    color: palevioletred;
+
+}
+
+
+

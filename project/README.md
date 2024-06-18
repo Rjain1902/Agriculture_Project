@@ -6,4 +6,4 @@ HTML
 CSS
 Tailwind CSS
 Material UI
-BootStrap
+React-Router for navigation

@@ -1,0 +1,91 @@
+.navigation_div {
+
+    width: 150px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: -10px;
+
+}
+
+.navigation_button {
+    background: #e75480;
+    /* Add gradient background */
+    padding: 10px 20px 10px 30px;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    border-top: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    /* Add a subtle box shadow */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 45px;
+}
+
+.navigation_button:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    bottom: 0px;
+    top: 0px;
+    right: -30px;
+    background-image:
+        linear-gradient(to top right, #e75480 50%, transparent 51%),
+        linear-gradient(to bottom right, #e75480 50%, transparent 51%);
+    background-size: 100% 50%;
+    background-position: top left, bottom left;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for background and transform */
+}
+
+.navigation_button:hover {
+    background: #D35600;
+    /* Slightly lighter gradient on hover */
+    color: #fff;
+    /* Adjust text color if needed */
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    /* Enhanced shadow on hover */
+}
+
+.navigation_button:hover:after {
+    background-image:
+        linear-gradient(to top right, #D35600 50%, transparent 51%),
+        linear-gradient(to bottom right, #D35600 50%, transparent 51%);
+    /* Slightly enlarge the arrow on hover */
+}
+
+/* Optional: Add a focus effect for accessibility */
+.navigation_button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    /* Add a focus ring */
+}
+
+/* Optional: Add an animation for the initial load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.navigation_button {
+    animation: fadeIn 1s ease-in-out;
+}

@@ -7,7 +7,7 @@ function About() {
       <div>
         
         <object width="100%" height="650px" data={AboutPdf} type="application/pdf"> </object>
-        <Link to="/" className="absolute top-10 left-0">
+        <Link to="/" className="absolute top-14 left-0">
           <ReplySharpIcon fontSize="large" />
         </Link>  
        

@@ -10,9 +10,9 @@ function Contact() {
   };
 
   return (
-    <>
-      <div>
-        <Link to="/" className="absolute top-2 left-0">
+    
+      <div className='main' >
+        <Link to="/" className=" top-2 left-0">
           <ReplySharpIcon fontSize="large" />
         </Link>
         <div className="flex-1 mt-24 ml-52">
@@ -36,7 +36,7 @@ function Contact() {
           </p>
         </div>
       </div>
-    </>
+    
   );
 }
 

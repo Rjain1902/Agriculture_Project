@@ -3,4 +3,10 @@
     text-decoration: underline;
     color: brown;
 }
+.main{
+    width: 100vw;
+    height: 650px;
+    background-color: #c8ee90;
+    padding: 0;
+}
 
